@@ -47,7 +47,6 @@ async function displayList() {
 
 function displayItem(idx) {
 	list.createItem(idx);
-	console.log(list.item);
 	dataEl.removeChild(listEl);
 
 	const newItem = document.createElement('div');
