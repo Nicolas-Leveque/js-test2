@@ -58,8 +58,12 @@ function displayItem(idx) {
 	const newImg = document.createElement('img');
 	newImg.setAttribute('src', list.item.url);
 
+	const newMsg = document.createElement('p');
+	newMsg.innerText = "Cliquer sur l'entête pour revenir à la liste";
+
 	newItem.appendChild(newPres);
 	newItem.appendChild(newImg);
+	newItem.appendChild(newMsg);
 	dataEl.appendChild(newItem);
 }
 displayList();
