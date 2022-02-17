@@ -6,6 +6,15 @@ export default class List {
 		this.item = item;
 	}
 
+	//correction:
+	// class List {
+	// 	constructor( root, url ) {
+	// 		this.root = document.getElementById(root);
+	// 		this.url = url
+	// 	}
+	// }
+	// utiliser root pour mettre l'element qui recevra les données pour simplifier la selection
+
 	async createList(url) {
 		const res = await fetch(this.url);
 		this.data = await res.json();
